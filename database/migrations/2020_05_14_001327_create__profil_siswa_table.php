@@ -25,6 +25,7 @@ class CreateProfilSiswaTable extends Migration
             $table->string('agama');
             $table->text('alamat');
             $table->text('nohp');
+            $table->string('foto');
             $table->timestamps();
         });
     }

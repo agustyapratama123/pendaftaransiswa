@@ -86,6 +86,11 @@
                     <div class="col-4">
                         <button type="submit" class="btn btn-primary btn-block">Daftar</button>
                     </div>
+                    <div class="col-4">
+                        <p class="mb-0 mt-3">
+                            <a href="/register" class="text-center">Daftar Baru</a>
+                        </p>
+                    </div>
                     <!-- /.col -->
                 </form>
 
