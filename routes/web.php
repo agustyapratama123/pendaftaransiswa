@@ -18,7 +18,14 @@ Route::get('/', function () {
 });
 
 Route::get('/login','ProfileController@index');
+Route::get('/daftar','DaftarController@index');
+Route::post('/daftar','DaftarController@store');
 
+Route::get('/datasiswa','PendaftaranController@datasiswa');
+Route::get('/dataortu','PendaftaranController@dataortu');
+Route::get('/datasekolah','PendaftaranController@datasekolah');
+Route::get('/nilaiusbn','PendaftaranController@nilaiusbn');
+Route::get('/nilaiunbk','PendaftaranController@nilaiunbk');
 
 
 Auth::routes();

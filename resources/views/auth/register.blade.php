@@ -28,7 +28,7 @@
             <div class="card-body register-card-body">
                 <p class="login-box-msg">Daftar Baru</p>
 
-                <form action="/register" method="post">
+                <form action="/daftar" method="post">
                     @csrf
                     <div class="input-group mb-3">
                         <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" autocomplete="name" autofocus Placeholder="Nama Lengkap">
@@ -74,7 +74,7 @@
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password" Placeholder="Ketikan Ulang Password">
+                        <input id="password-confirm" type="password" class="form-control" name="password_confirmation" autocomplete="new-password" Placeholder="Ketikan Ulang Password">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-lock"></span>
@@ -86,9 +86,9 @@
                     <div class="col-4">
                         <button type="submit" class="btn btn-primary btn-block">Daftar</button>
                     </div>
-                    <div class="col-4">
+                    <div class="col-6">
                         <p class="mb-0 mt-3">
-                            <a href="/register" class="text-center">Daftar Baru</a>
+                            <a href="/login" class="text-center">Login</a>
                         </p>
                     </div>
                     <!-- /.col -->
