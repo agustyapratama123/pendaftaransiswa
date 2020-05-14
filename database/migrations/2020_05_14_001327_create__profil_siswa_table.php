@@ -13,8 +13,18 @@ class CreateProfilSiswaTable extends Migration
      */
     public function up()
     {
-        Schema::create('_profil_siswa', function (Blueprint $table) {
+        Schema::create('profil_siswa', function (Blueprint $table) {
             $table->id();
+            $table->string('nis');
+            $table->string('nisn');
+            $table->string('nik');
+            $table->string('namalengkap');
+            $table->string('jeniskelamin');
+            $table->string('tempatlahir');
+            $table->string('tanggallahir');
+            $table->string('agama');
+            $table->text('alamat');
+            $table->text('nohp');
             $table->timestamps();
         });
     }
