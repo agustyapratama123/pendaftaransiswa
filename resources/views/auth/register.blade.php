@@ -31,7 +31,7 @@
                 <form action="/register" method="post">
                     @csrf
                     <div class="input-group mb-3">
-                        <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus Placeholder="Nama Lengkap">
+                        <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" autocomplete="name" autofocus Placeholder="Nama Lengkap">
 
                         @error('name')
                         <span class="invalid-feedback" role="alert">
@@ -45,7 +45,7 @@
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" Placeholder="Email">
+                        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" autocomplete="email" Placeholder="Email">
 
                         @error('email')
                         <span class="invalid-feedback" role="alert">
@@ -60,7 +60,7 @@
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" Placeholder="Password">
+                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" autocomplete="new-password" Placeholder="Password">
 
                         @error('password')
                         <span class="invalid-feedback" role="alert">
