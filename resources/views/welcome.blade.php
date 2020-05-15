@@ -56,9 +56,9 @@
                         </div>
                         <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                             <div class="log_chat_area d-flex align-items-center">
-                                <a href="/login" class="login ">
+                                <a href="/masuk" class="login ">
                                     <i class="flaticon-user"></i>
-                                    <span>login</span>
+                                    <span>Masuk</span>
                                 </a>
                                 <div class="live_chat_btn">
                                     <a class="boxed_btn_orange" href="#">
@@ -93,7 +93,7 @@
                             <h3>PPDB <br>
                                 Calon Siswa <br>
                                 Smk Perjuangan</h3>
-                            <a href="/register" class="boxed_btn">Daftar Sekarang</a>
+                            <a href="/daftar" class="boxed_btn">Daftar Sekarang</a>
                         </div>
                     </div>
                 </div>

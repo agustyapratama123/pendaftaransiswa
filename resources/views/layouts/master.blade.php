@@ -11,6 +11,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <title>AdminLTE 3 | Starter</title>
+    <script src="https://kit.fontawesome.com/efebcabb13.js" crossorigin="anonymous"></script>
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="{{asset('/admin/plugins/fontawesome-free/css/all.min.css')}}">
@@ -30,6 +31,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <li class="nav-item">
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="/home" class="nav-link">Home</a>
+                </li>
             </ul>
 
 
@@ -46,7 +50,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="index3.html" class="brand-link">
+            <a href="/" class="brand-link">
                 <img src="{{asset('/admin/dist/img/AdminLTELogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">Smk Perjuangan</span>
             </a>
@@ -68,34 +72,27 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-                        <li class="nav-item has-treeview menu-open">
-                            <a href="#" class="nav-link active">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
-                                    Data Formulir
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link active">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Data Siswa</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Data Orangtua</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
-                                    Pengaturan
+                                    Biodata
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../gallery.html" class="nav-link">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                    Print Bukti Pendaftaran
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../gallery.html" class="nav-link">
+                                <i class="fas fa-users fa-1x"></i>
+                                <p>
+                                    Pengumuman
                                 </p>
                             </a>
                         </li>
@@ -108,6 +105,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
+            @yield('content')
+
 
         </div>
         <!-- /.content-wrapper -->
@@ -138,6 +137,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="{{asset('/admin/plugins/jquery/jquery.min.js')}}"></script>
     <!-- Bootstrap 4 -->
     <script src="{{asset('/admin/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
     <!-- AdminLTE App -->
     <script src="{{asset('/admin/dist/js/adminlte.min.js')}}"></script>
 </body>

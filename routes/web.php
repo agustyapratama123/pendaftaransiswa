@@ -17,17 +17,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/login','ProfileController@index');
+Route::get('/masuk','LoginController@index')->name('masuk');
+Route::post('/masuk','LoginController@masukdashboard');
 Route::get('/daftar','DaftarController@index');
 Route::post('/daftar','DaftarController@store');
 
-Route::get('/datasiswa','PendaftaranController@datasiswa');
-Route::get('/dataortu','PendaftaranController@dataortu');
-Route::get('/datasekolah','PendaftaranController@datasekolah');
-Route::get('/nilaiusbn','PendaftaranController@nilaiusbn');
-Route::get('/nilaiunbk','PendaftaranController@nilaiunbk');
 
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::group(['middleware'=>'auth'],function (){
+    Route::get('/home', 'HomeController@index')->name('home');
+    
+    Route::get('/datasiswa','PendaftaranController@datasiswa');
+    Route::get('/dataortu','PendaftaranController@dataortu');
+    Route::get('/datasekolah','PendaftaranController@datasekolah');
+    Route::get('/nilaiusbn','PendaftaranController@nilaiusbn');
+    Route::get('/nilaiunbk','PendaftaranController@nilaiunbk');
+});

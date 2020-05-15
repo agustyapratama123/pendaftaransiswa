@@ -68,7 +68,7 @@
                 </form>
 
                 <p class="mb-0 mt-3">
-                    <a href="/register" class="text-center">Daftar Baru</a>
+                    <a href="/daftar" class="text-center">Daftar Baru</a>
                 </p>
             </div>
             <!-- /.login-card-body -->
