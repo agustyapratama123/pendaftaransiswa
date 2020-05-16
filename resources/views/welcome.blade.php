@@ -56,7 +56,7 @@
                         </div>
                         <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                             <div class="log_chat_area d-flex align-items-center">
-                                <a href="/masuk" class="login ">
+                                <a href="/login" class="login ">
                                     <i class="flaticon-user"></i>
                                     <span>Masuk</span>
                                 </a>

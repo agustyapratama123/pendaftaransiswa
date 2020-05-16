@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Auth::routes();
+
 Route::get('/masuk','LoginController@index')->name('masuk');
 Route::post('/masuk','LoginController@masukdashboard');
 Route::get('/daftar','DaftarController@index');
@@ -24,7 +26,6 @@ Route::post('/daftar','DaftarController@store');
 
 
 
-Auth::routes();
 Route::group(['middleware'=>'auth'],function (){
     Route::get('/home', 'HomeController@index')->name('home');
     
