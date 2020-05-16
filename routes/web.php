@@ -28,6 +28,7 @@ Route::post('/daftar','DaftarController@store');
 
 Route::group(['middleware'=>'auth'],function (){
     Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('/profile', 'HomeController@profile')->name('profile');
     
     Route::get('/datasiswa','PendaftaranController@datasiswa');
     Route::get('/dataortu','PendaftaranController@dataortu');
